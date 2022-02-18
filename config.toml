@@ -1,0 +1,74 @@
+baseURL = "https://plexer0.gitlab.io"
+languageCode = "en-us"
+title = "Plexer0"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
+
+[params]
+    author = "Plexer"
+    avatar = "avatar.png"
+    # avatarDescription = "My avatar description"
+    favicon = "favicon.ico"
+    description = """
+        Just your average nerd. 
+        Linux desktop user for 2 years and counting. 
+        GPG Key ID: 084BE9FA4F35AAF5
+    """
+    publicationYear = "2022"
+    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    # singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    term = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "blog"
+    # name = "Blog" #If display text link, cancel comment out
+    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/blog/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "github"
+    # name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/Plexer0"
+    weight = 20
+
+[[menu.main]]
+    identifier = "gitlab"
+    # name = "GitLab"
+    pre = "<i class='fab fa-gitlab fa-lg'></i>"
+    url = "https://gitlab.com/Plexer0"
+    weight = 30
+
+[[menu.main]]
+    identifier = "codeberg"
+    # name = "Codeberg"
+    pre = "<i class='fa fa-mountain fa-lg'></i>"
+    url = "https://codeberg.org/Plexer0"
+    weight = 40
+
+[[menu.main]]
+    identifier = "mastodon"
+    # name = "Mastodon"
+    pre = "<i class='fa-brands fa-mastodon fa-lg'></i>"
+    url = "https://mastodon.social/@Plexer0"
+    weight = 50
+
+[[menu.main]]
+    identifier = "dm"
+    # name = "Email"
+    pre = "<i class='fa fa-comment-dots fa-lg'></i>"
+    url = "https://matrix.to/#/@plexer0:matrix.org"
+    weight = 60
