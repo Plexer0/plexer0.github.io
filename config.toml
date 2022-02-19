@@ -62,7 +62,7 @@ hasCJKLanguage = true
 [[menu.main]]
     identifier = "mastodon"
     # name = "Mastodon"
-    pre = "<i class='fa-brands fa-mastodon fa-lg'></i>"
+    pre = "<i class='fab fa-mastodon fa-lg'></i>"
     url = "https://mastodon.social/@Plexer0"
     weight = 50
 
