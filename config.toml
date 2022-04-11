@@ -67,8 +67,15 @@ hasCJKLanguage = true
     weight = 50
 
 [[menu.main]]
+    identifier = "lemmy"
+    # name = "Lemmy"
+    pre = "<i class='fab fa-y-combinator fa-lg'></i>"
+    url = "https://lemmy.ml/Plexer0"
+    weight = 60
+
+[[menu.main]]
     identifier = "dm"
     # name = "Email"
     pre = "<i class='fa fa-comment-dots fa-lg'></i>"
     url = "https://matrix.to/#/@plexer0:matrix.org"
-    weight = 60
+    weight = 70
