@@ -12,7 +12,6 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 test:
-  stage: test
   script:
     - hugo
   except:
@@ -20,7 +19,6 @@ test:
       - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
 pages:
-  stage: deploy
   script:
     - hugo
   artifacts:
